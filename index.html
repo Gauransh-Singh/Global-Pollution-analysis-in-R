@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html><head><meta charset='UTF-8'>
+<title>MCA Air Quality Analysis</title>
+<style>
+body{font-family:Arial;max-width:1000px;margin:35px auto;padding:0 20px;line-height:1.6}
+img{max-width:100%;height:auto}
+table{border-collapse:collapse}
+td,th{padding:8px;border:1px solid #ddd}
+</style></head><body>
+<h1>Global Air Quality Analysis and Visualization Using R</h1>
+<h2>Abstract</h2>
+<p>This project analyzes the WHO Ambient Air Quality Database
+using R. Data cleaning, descriptive statistics, comparisons,
+correlation analysis and visualization are used to study reported
+PM2.5, PM10 and NO2 concentrations.</p>
+<h2>Objectives</h2>
+<ul><li>Clean and prepare the dataset.</li>
+<li>Calculate descriptive statistics.</li>
+<li>Compare countries, cities and WHO regions.</li>
+<li>Study annual trends and pollutant relationships.</li></ul>
+<h2>Dataset Summary</h2>
+<p>Records after cleaning: 24319</p>
+<p>Countries represented: 104</p>
+<p>Year range: 2010 to 2025</p>
+<h2>Descriptive Statistics</h2>
+          Pollutant Count     Mean Median Standard_Deviation Minimum<br> pm10_concentration 18265 30.05434  21.44           28.76783       1<br> pm25_concentration 12984 19.42811  13.82           16.40824       1<br>  no2_concentration 17596 18.18835  15.88           13.47636       0<br> Maximum<br>  540.00<br>  313.00<br>  174.45
+<h2>Visualizations</h2>
+<h3>Annual Pollution Trends</h3>
+<img src='plots/01_annual_trends.png' alt='Annual Pollution Trends'>
+<h3>Top Cities by PM2.5</h3>
+<img src='plots/02_top_cities.png' alt='Top Cities by PM2.5'>
+<h3>Country Comparison</h3>
+<img src='plots/03_country_comparison.png' alt='Country Comparison'>
+<h3>India Air Quality Trends</h3>
+<img src='plots/04_india_trends.png' alt='India Air Quality Trends'>
+<h3>PM2.5 and PM10 Relationship</h3>
+<img src='plots/05_pm25_pm10_scatter.png' alt='PM2.5 and PM10 Relationship'>
+<h3>Pollutant Correlation Heatmap</h3>
+<img src='plots/06_correlation_heatmap.png' alt='Pollutant Correlation Heatmap'>
+<h3>WHO Region Comparison</h3>
+<img src='plots/07_region_comparison.png' alt='WHO Region Comparison'>
+<h2>Conclusion</h2>
+<p>The analysis summarizes reported air pollution measurements
+and explores differences across locations and years. Results
+should be interpreted in light of differences in data coverage,
+monitoring stations and observation counts.</p>
+<h2>Limitations</h2>
+<p>Measurements vary by year, location and monitoring coverage.
+Averages from different locations or periods are not necessarily
+directly comparable. Correlation does not establish causation.</p>
+<h2>Reference</h2>
+<p>World Health Organization (WHO), Ambient Air Quality Database,
+Version 2026.</p>
+</body></html>

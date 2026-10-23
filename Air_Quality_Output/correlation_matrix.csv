@@ -1,0 +1,4 @@
+"","pm10_concentration","pm25_concentration","no2_concentration"
+"pm10_concentration",1,0.869008979496741,0.428627057444196
+"pm25_concentration",0.869008979496741,1,0.401351058956507
+"no2_concentration",0.428627057444196,0.401351058956507,1

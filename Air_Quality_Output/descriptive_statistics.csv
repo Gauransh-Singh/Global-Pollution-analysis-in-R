@@ -1,0 +1,4 @@
+"Pollutant","Count","Mean","Median","Standard_Deviation","Minimum","Maximum"
+"pm10_concentration",18265,30.0543355598139,21.44,28.7678266349651,1,540
+"pm25_concentration",12984,19.4281140634627,13.82,16.408244687303,1,313
+"no2_concentration",17596,18.1883487156172,15.88,13.4763580631835,0,174.45

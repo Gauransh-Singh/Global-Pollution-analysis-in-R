@@ -1,5 +1,12 @@
 # Global Air Quality Analysis and Visualization Using R
 
+<p align="center">
+  <a href="https://gauransh-singh.github.io/Global-Pollution-analysis-in-R/">
+    <img src="https://img.shields.io/badge/🌍_View_Live_Project-2ea44f?style=for-the-badge" alt="View Live Project" />
+  </a>
+</p>
+
+
 **MCA Project | Data Analytics and Visualization**
 
 This project analyzes the WHO Ambient Air Quality Database (Version 2026) using R. It includes data cleaning, descriptive statistics, country/city comparisons, annual trends, and pollutant relationship analysis.
@@ -54,13 +61,6 @@ The script generates these plots:
 6. Pollutant correlation heatmap
 7. Average PM2.5 by WHO region
 
-### Plot Gallery
-
-> **Upload your plot images here.** Copy the generated PNG files from `Air_Quality_Output/plots/` into the repository folder `plots/`. Then replace the example filenames below if your image filenames differ.
-
-Create a folder named `plots` in the repository root and add the exported PNG files there.
-
-
 ## Plot Gallery
 
 <table>
@@ -94,8 +94,6 @@ Create a folder named `plots` in the repository root and add the exported PNG fi
   </tr>
 </table>
 
-
-**Note:** GitHub displays the images after you upload the corresponding files to the `plots/` folder with the same filenames.
 
 ## Output Files
 
@@ -157,7 +155,6 @@ Air-Quality-Analysis-R/
     └── ...
 ```
 
-You do not need to commit every generated CSV to GitHub unless your instructor requests them. For a clean public repository, consider adding large raw datasets and generated output files to `.gitignore`, and link to the official WHO source instead.
 
 ## References
 

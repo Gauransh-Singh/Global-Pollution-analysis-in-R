@@ -1,5 +1,12 @@
 # Global Air Quality Analysis and Visualization Using R
 
+<p align="center">
+  <a href="https://gauransh-singh.github.io/Global-Pollution-analysis-in-R/">
+    <img src="https://img.shields.io/badge/🌍_View_Live_Project-2ea44f?style=for-the-badge" alt="View Live Project" />
+  </a>
+</p>
+
+
 **MCA Project | Data Analytics and Visualization**
 
 This project analyzes the WHO Ambient Air Quality Database (Version 2026) using R. It includes data cleaning, descriptive statistics, country/city comparisons, annual trends, and pollutant relationship analysis.

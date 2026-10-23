@@ -1,11 +1,3 @@
-
-# ==============================================================
-# MCA PROJECT: GLOBAL AIR QUALITY ANALYSIS AND VISUALIZATION
-# Dataset: WHO Ambient Air Quality Database, Version 2026
-# ==============================================================
-
-# 1. INSTALL AND LOAD PACKAGES
-
 packages <- c("readxl", "dplyr", "tidyr", "ggplot2", "corrplot")
 
 for (pkg in packages) {
@@ -20,13 +12,9 @@ library(tidyr)
 library(ggplot2)
 library(corrplot)
 
-# 2. SELECT YOUR EXCEL FILE
-
 cat("Please select your WHO Air Quality Excel file.\n")
 
 file_path <- file.choose()
-
-# 3. READ DATA STORED IN THE FIRST COLUMN
 
 excel_data <- read_excel(file_path, col_names = FALSE)
 
@@ -37,7 +25,6 @@ if (length(lines) < 2) {
   stop("The selected file does not contain enough data.")
 }
 
-# Each Excel cell contains one CSV record.
 air <- read.csv(
   text = paste(lines, collapse = "\n"),
   header = TRUE,
@@ -47,7 +34,6 @@ air <- read.csv(
   strip.white = TRUE
 )
 
-# Remove accidental spaces from column names.
 names(air) <- trimws(names(air))
 
 cat("\n========== DATASET LOADED ==========\n")
@@ -57,8 +43,6 @@ cat("\nColumn names:\n")
 print(names(air))
 cat("\nFirst six rows:\n")
 print(head(air))
-
-# 4. VERIFY REQUIRED COLUMNS
 
 required_cols <- c(
   "who_region",
@@ -79,8 +63,6 @@ if (length(missing_cols) > 0) {
     ". Check that the first column was parsed correctly."
   )
 }
-
-# 5. CONVERT NUMERIC COLUMNS
 
 numeric_cols <- intersect(
   c(
@@ -104,8 +86,6 @@ for (col in numeric_cols) {
     as.numeric(as.character(air[[col]]))
   )
 }
-
-# 6. CLEAN THE DATA
 
 air <- air %>%
   mutate(
@@ -140,7 +120,6 @@ analysis_data <- air %>%
     )
   )
 
-# Create output folders beside the selected Excel file.
 output_dir <- file.path(dirname(file_path), "Air_Quality_Output")
 plot_dir <- file.path(output_dir, "plots")
 
@@ -153,8 +132,6 @@ write.csv(
 )
 
 cat("\nCleaned records:", nrow(analysis_data), "\n")
-
-# 7. MISSING VALUE ANALYSIS
 
 missing_summary <- data.frame(
   Variable = names(air),
@@ -170,8 +147,6 @@ write.csv(
   file.path(output_dir, "missing_value_summary.csv"),
   row.names = FALSE
 )
-
-# 8. DESCRIPTIVE STATISTICS
 
 pollutants <- c(
   "pm10_concentration",
@@ -206,8 +181,6 @@ write.csv(
 
 cat("\n========== DESCRIPTIVE STATISTICS ==========\n")
 print(descriptive_stats)
-
-# 9. ANNUAL POLLUTION TRENDS
 
 annual_data <- analysis_data %>%
   group_by(year) %>%
@@ -253,8 +226,6 @@ ggsave(
   file.path(plot_dir, "01_annual_trends.png"),
   p1, width = 10, height = 6
 )
-
-# 10. TOP 15 CITIES BY PM2.5
 
 city_data <- analysis_data %>%
   filter(
@@ -304,8 +275,6 @@ ggsave(
   p2, width = 10, height = 7
 )
 
-# 11. COUNTRY COMPARISON
-
 country_data <- analysis_data %>%
   filter(!is.na(pm25_concentration)) %>%
   group_by(country_name) %>%
@@ -348,8 +317,6 @@ ggsave(
   file.path(plot_dir, "03_country_comparison.png"),
   p3, width = 10, height = 7
 )
-
-# 12. INDIA AIR QUALITY ANALYSIS
 
 india <- analysis_data %>%
   filter(grepl("India", country_name, ignore.case = TRUE))
@@ -399,8 +366,6 @@ ggsave(
   p4, width = 10, height = 6
 )
 
-# 13. PM2.5 VS PM10 SCATTER PLOT
-
 scatter_data <- analysis_data %>%
   filter(
     is.finite(pm25_concentration),
@@ -424,8 +389,6 @@ ggsave(
   file.path(plot_dir, "05_pm25_pm10_scatter.png"),
   p5, width = 8, height = 6
 )
-
-# 14. CORRELATION HEATMAP
 
 cor_data <- analysis_data %>%
   select(
@@ -462,8 +425,6 @@ corrplot(
 )
 
 dev.off()
-
-# 15. WHO REGION COMPARISON
 
 region_data <- analysis_data %>%
   filter(
@@ -505,8 +466,6 @@ ggsave(
   file.path(plot_dir, "07_region_comparison.png"),
   p7, width = 9, height = 6
 )
-
-# 16. CREATE HTML REPORT
 
 plot_files <- c(
   "01_annual_trends.png",
@@ -595,8 +554,6 @@ writeLines(
   file.path(output_dir, "project_report.html")
 )
 
-# 17. FINAL OUTPUT
-
 cat("\n====================================\n")
 cat("AIR QUALITY PROJECT FINISHED\n")
 cat("====================================\n")
@@ -606,7 +563,6 @@ cat("Statistics: descriptive_statistics.csv\n")
 cat("Charts folder: plots/\n")
 cat("Report: project_report.html\n")
 
-# Open report automatically when possible
 browseURL(
   normalizePath(
     file.path(output_dir, "project_report.html"),

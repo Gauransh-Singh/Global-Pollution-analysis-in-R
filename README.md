@@ -61,13 +61,6 @@ The script generates these plots:
 6. Pollutant correlation heatmap
 7. Average PM2.5 by WHO region
 
-### Plot Gallery
-
-> **Upload your plot images here.** Copy the generated PNG files from `Air_Quality_Output/plots/` into the repository folder `plots/`. Then replace the example filenames below if your image filenames differ.
-
-Create a folder named `plots` in the repository root and add the exported PNG files there.
-
-
 ## Plot Gallery
 
 <table>
@@ -101,8 +94,6 @@ Create a folder named `plots` in the repository root and add the exported PNG fi
   </tr>
 </table>
 
-
-**Note:** GitHub displays the images after you upload the corresponding files to the `plots/` folder with the same filenames.
 
 ## Output Files
 
@@ -164,7 +155,6 @@ Air-Quality-Analysis-R/
     └── ...
 ```
 
-You do not need to commit every generated CSV to GitHub unless your instructor requests them. For a clean public repository, consider adding large raw datasets and generated output files to `.gitignore`, and link to the official WHO source instead.
 
 ## References
 

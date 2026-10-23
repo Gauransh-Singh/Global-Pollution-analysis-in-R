@@ -62,13 +62,20 @@ Create a folder named `plots` in the repository root and add the exported PNG fi
 
 | Plot | Preview |
 |---|---|
-| Annual trends | ![Annual pollution trends](plots/annual_trends.png) |
-| Top cities by PM2.5 | ![Top cities by PM2.5](plots/top_cities_pm25.png) |
-| Country comparison | ![Country comparison](plots/country_comparison.png) |
-| India trends | ![India air quality trends](plots/india_trends.png) |
-| PM2.5 vs PM10 | ![PM2.5 vs PM10](plots/pm25_vs_pm10.png) |
-| Correlation heatmap | ![Pollutant correlation heatmap](plots/correlation_heatmap.png) |
-| WHO region comparison | ![WHO region comparison](plots/region_comparison.png) |
+| Annual trends | ![Annual pollution trends](<img width="3000" height="1800" alt="01_annual_trends" src="https://github.com/user-attachments/assets/7f0908f3-ac8a-421a-8371-9b869746b6ef" />
+) |
+| Top cities by PM2.5 | ![Top cities by PM2.5](<img width="3000" height="2100" alt="02_top_cities" src="https://github.com/user-attachments/assets/219d9d73-057c-4f0a-9277-1b9619984293" />
+) |
+| Country comparison | ![Country comparison](<img width="3000" height="2100" alt="03_country_comparison" src="https://github.com/user-attachments/assets/24e5db11-2f16-4061-a4e7-883c23cf326f" />
+) |
+| India trends | ![India air quality trends](<img width="3000" height="1800" alt="04_india_trends" src="https://github.com/user-attachments/assets/ec6466f1-bb66-4554-9a5e-52240ebdbeae" />
+) |
+| PM2.5 vs PM10 | ![PM2.5 vs PM10](<img width="2400" height="1800" alt="05_pm25_pm10_scatter" src="https://github.com/user-attachments/assets/462ad196-d4b0-4a91-a44e-bf6d4abcf3a3" />
+) |
+| Correlation heatmap | ![Pollutant correlation heatmap](<img width="1000" height="800" alt="06_correlation_heatmap" src="https://github.com/user-attachments/assets/9ee01a3b-89a0-405b-bd06-3d9596c7211f" />
+) |
+| WHO region comparison | ![WHO region comparison](<img width="2700" height="1800" alt="07_region_comparison" src="https://github.com/user-attachments/assets/376a07d6-83a6-47fd-93c9-c43715679a8a" />
+) |
 
 **Note:** GitHub displays the images after you upload the corresponding files to the `plots/` folder with the same filenames.
 
@@ -143,8 +150,5 @@ You do not need to commit every generated CSV to GitHub unless your instructor r
 
 ## Academic Details
 
-- **Student Name:** [Your Name]
+- **Student Name:** Gauransh Singh
 - **Programme:** MCA
-- **Roll Number:** [Your Roll Number]
-- **Institution:** [College/University Name]
-- **Academic Year:** [Academic Year]

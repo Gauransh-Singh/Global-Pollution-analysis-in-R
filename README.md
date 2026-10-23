@@ -60,15 +60,40 @@ The script generates these plots:
 
 Create a folder named `plots` in the repository root and add the exported PNG files there.
 
-| Plot | Preview |
-|---|---|
-| Annual trends | ![Annual pollution trends](plots/annual_trends.png) |
-| Top cities by PM2.5 | ![Top cities by PM2.5](plots/top_cities_pm25.png) |
-| Country comparison | ![Country comparison](plots/country_comparison.png) |
-| India trends | ![India air quality trends](plots/india_trends.png) |
-| PM2.5 vs PM10 | ![PM2.5 vs PM10](plots/pm25_vs_pm10.png) |
-| Correlation heatmap | ![Pollutant correlation heatmap](plots/correlation_heatmap.png) |
-| WHO region comparison | ![WHO region comparison](plots/region_comparison.png) |
+
+## Plot Gallery
+
+<table>
+  <tr>
+    <td width="25%" valign="middle"><strong>Annual trends</strong></td>
+    <td width="75%" align="center"><img width="600" alt="Annual pollution trends" src="https://github.com/user-attachments/assets/7f0908f3-ac8a-421a-8371-9b869746b6ef" /></td>
+  </tr>
+  <tr>
+    <td valign="middle"><strong>Top cities by PM2.5</strong></td>
+    <td align="center"><img width="600" alt="Top cities by PM2.5" src="https://github.com/user-attachments/assets/219d9d73-057c-4f0a-9277-1b9619984293" /></td>
+  </tr>
+  <tr>
+    <td valign="middle"><strong>Country comparison</strong></td>
+    <td align="center"><img width="600" alt="Country comparison" src="https://github.com/user-attachments/assets/24e5db11-2f16-4061-a4e7-883c23cf326f" /></td>
+  </tr>
+  <tr>
+    <td valign="middle"><strong>India trends</strong></td>
+    <td align="center"><img width="600" alt="India air quality trends" src="https://github.com/user-attachments/assets/ec6466f1-bb66-4554-9a5e-52240ebdbeae" /></td>
+  </tr>
+  <tr>
+    <td valign="middle"><strong>PM2.5 vs PM10</strong></td>
+    <td align="center"><img width="600" alt="PM2.5 versus PM10" src="https://github.com/user-attachments/assets/462ad196-d4b0-4a91-a44e-bf6d4abcf3a3" /></td>
+  </tr>
+  <tr>
+    <td valign="middle"><strong>Correlation heatmap</strong></td>
+    <td align="center"><img width="600" alt="Pollutant correlation heatmap" src="https://github.com/user-attachments/assets/9ee01a3b-89a0-405b-bd06-3d9596c7211f" /></td>
+  </tr>
+  <tr>
+    <td valign="middle"><strong>WHO region comparison</strong></td>
+    <td align="center"><img width="600" alt="WHO region comparison" src="https://github.com/user-attachments/assets/376a07d6-83a6-47fd-93c9-c43715679a8a" /></td>
+  </tr>
+</table>
+
 
 **Note:** GitHub displays the images after you upload the corresponding files to the `plots/` folder with the same filenames.
 
@@ -143,8 +168,5 @@ You do not need to commit every generated CSV to GitHub unless your instructor r
 
 ## Academic Details
 
-- **Student Name:** [Your Name]
+- **Student Name:** Gauransh Singh
 - **Programme:** MCA
-- **Roll Number:** [Your Roll Number]
-- **Institution:** [College/University Name]
-- **Academic Year:** [Academic Year]
